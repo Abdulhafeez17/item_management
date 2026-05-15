@@ -1,0 +1,39 @@
+[2026-05-07 03:37:11,597] [INFO] [user=hafeez] Item created id=3
+[2026-05-07 03:37:20,002] [INFO] [user=hafeez] Item created id=4
+[2026-05-10 14:58:45,586] [ERROR] [user=hafeez] Create failed: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 8758091520 and this is thread id 6158675968.
+[2026-05-10 15:01:22,393] [ERROR] [user=hafeez] Create failed: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 8758091520 and this is thread id 6158675968.
+[2026-05-10 15:07:18,253] [INFO] [user=hafeez] Item created id=5
+[2026-05-10 16:09:00,362] [INFO] [user=hafeez] Workflow activate id=1 draft->active
+[2026-05-10 16:26:41,826] [INFO] [user=hafeez] Item updated id=1
+[2026-05-10 22:33:13,057] [INFO] [user=hafeez] Item created id=6
+[2026-05-11 11:46:50,466] [INFO] [user=hafeez] Item created id=7
+[2026-05-11 11:53:47,586] [INFO] [user=hafeez] Item created id=8
+[2026-05-11 12:02:41,243] [INFO] [user=hafeez] Item created id=9
+[2026-05-11 12:32:40,293] [INFO] [user=hafeez] Item created id=10
+[2026-05-11 12:32:43,053] [INFO] [user=hafeez] Workflow activate id=10 draft->active
+[2026-05-11 12:35:10,846] [INFO] [user=hafeez] Item updated id=10
+[2026-05-11 12:36:41,148] [INFO] [user=hafeez] Item created id=11
+[2026-05-11 13:04:36,579] [ERROR] [user=hafeez] Invalid transition draft->completed
+[2026-05-11 13:04:37,627] [ERROR] [user=hafeez] Invalid transition draft->completed
+[2026-05-11 13:04:38,538] [ERROR] [user=hafeez] Invalid transition draft->blocked
+[2026-05-11 13:04:39,387] [INFO] [user=hafeez] Workflow activate id=11 draft->active
+[2026-05-11 13:04:40,603] [INFO] [user=hafeez] Workflow block id=11 active->blocked
+[2026-05-11 13:04:41,655] [ERROR] [user=hafeez] Invalid transition blocked->completed
+[2026-05-11 13:04:42,839] [INFO] [user=hafeez] Workflow activate id=11 blocked->active
+[2026-05-11 13:04:43,767] [INFO] [user=hafeez] Workflow complete id=11 active->completed
+[2026-05-11 13:04:45,807] [INFO] [user=hafeez] Workflow reopen id=11 completed->active
+[2026-05-11 13:04:47,535] [INFO] [user=hafeez] Workflow block id=11 active->blocked
+[2026-05-11 13:04:49,204] [INFO] [user=hafeez] Workflow activate id=11 blocked->active
+[2026-05-11 13:04:50,604] [ERROR] [user=hafeez] Invalid transition active->active
+[2026-05-11 13:04:52,137] [INFO] [user=hafeez] Workflow block id=11 active->blocked
+[2026-05-11 13:04:55,984] [ERROR] [user=hafeez] Invalid transition blocked->completed
+[2026-05-11 13:23:07,344] [INFO] [user=hafeez] Item deleted id=11
+[2026-05-11 13:23:19,255] [INFO] [user=hafeez] Workflow activate id=4 draft->active
+[2026-05-11 13:23:20,260] [INFO] [user=hafeez] Workflow complete id=4 active->completed
+[2026-05-11 13:24:16,084] [INFO] [user=hafeez] Item created id=12
+[2026-05-11 13:24:39,703] [INFO] [user=hafeez] Item created id=13
+[2026-05-11 13:24:56,002] [INFO] [user=hafeez] Item created id=14
+[2026-05-13 15:36:27,236] [ERROR] [user=qwerty] Create failed: cannot start a transaction within a transaction
+[2026-05-13 15:36:31,247] [INFO] [user=qwerty] Item created id=15
+[2026-05-13 15:36:44,602] [INFO] [user=qwerty] Item created id=16
+[2026-05-13 18:12:17,995] [INFO] [user=hafeez] Item created id=17
