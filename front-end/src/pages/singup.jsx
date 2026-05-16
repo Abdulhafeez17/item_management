@@ -19,8 +19,14 @@ function Signup() {
     try {
 
       await signupUser(form);
+      localStorage.setItem(
+        "token",
+        form.username
+      );
+
 
       alert("Signup successful");
+
 
       navigate("/items");
 
@@ -30,43 +36,72 @@ function Signup() {
     }
   };
 
-  return (
+ return (
 
-    <form onSubmit={handleSubmit}>
+  <div>
 
-      <input
-        placeholder="Username"
-        value={form.username}
-        onChange={(e) =>
-          setForm({
-            ...form,
-            username: e.target.value,
-          })
-        }
-      />
+    {/* Top Black Header */}
+    <div
+      style={{
+        backgroundColor: "black",
+        color: "white",
+        padding: "15px 20px",
+      }}
+    >
+      <h1
+        style={{
+          margin: 0,
+          fontWeight: "bold",
+        }}
+      >
+        Item Manager
+      </h1>
+    </div>
 
-      <br /><br />
+    {/* Signup Form */}
+    <div style={{ padding: "20px" }}>
 
-      <input
-        type="password"
-        placeholder="Password"
-        value={form.password}
-        onChange={(e) =>
-          setForm({
-            ...form,
-            password: e.target.value,
-          })
-        }
-      />
+      <h2>Signup</h2>
 
-      <br /><br />
+      <form onSubmit={handleSubmit}>
 
-      <button type="submit">
-        Signup
-      </button>
+        <input
+          placeholder="Username"
+          value={form.username}
+          onChange={(e) =>
+            setForm({
+              ...form,
+              username: e.target.value,
+            })
+          }
+        />
 
-    </form>
-  );
+        <br /><br />
+
+        <input
+          type="password"
+          placeholder="Password"
+          value={form.password}
+          onChange={(e) =>
+            setForm({
+              ...form,
+              password: e.target.value,
+            })
+          }
+        />
+
+        <br /><br />
+
+        <button type="submit">
+          Signup
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+);
 }
 
 export default Signup;
