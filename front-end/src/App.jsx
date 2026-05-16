@@ -5,7 +5,7 @@ import Layout from "./components/Layout";
 import Login from "./pages/Login";
 import Signup from "./pages/singup";
 
-import ItemListPage from "./pages/ItemListPage";
+import ItemListPage from "./pages/ItemListpage";
 import ItemDetailPage from "./pages/ItemDetailPage";
 import CreateItemPage from "./pages/CreateItemPage";
 import EditItemPage from "./pages/EditItemPage";
