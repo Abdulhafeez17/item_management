@@ -1,0 +1,28 @@
+services:
+
+  backend:
+    build: ./backend
+
+    container_name: flask_backend
+
+    ports:
+      - "5000:5000"
+
+    env_file:
+      - ./backend/.env.development
+
+  frontend:
+    image: node:22-alpine
+
+    working_dir: /front-end
+
+    volumes:
+      - ./front-end:/front-end
+
+    command: sh -c "npm install && npm run dev -- --host"
+
+    ports:
+      - "5173:5173"
+
+    depends_on:
+      - backend
